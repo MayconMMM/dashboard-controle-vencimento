@@ -1,0 +1,133 @@
+.dashboard-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #2C3E50;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Estilos para os cartões */
+.filter-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  color: #2C3E50;
+  margin-bottom: 15px;
+}
+
+.indicator-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+  padding: 15px;
+  margin-bottom: 15px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.indicator-card:hover {
+  transform: translateY(-5px);
+}
+
+.indicator-card h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.expired {
+  background-color: #dc3545;
+}
+
+.about-to-expire {
+  background-color: #ffc107;
+}
+
+.by-sector {
+  background-color: #17a2b8;
+}
+
+.chart-card, .table-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.chart-card .card-header, .table-card .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.chart-card .card-header h5, .table-card .card-header h5 {
+  color: #2C3E50;
+  margin: 0;
+}
+
+/* Estilos para as abas */
+.nav-tabs {
+  border-bottom: 2px solid #e9ecef;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  color: #6c757d;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  color: #2C3E50;
+  border-bottom: 3px solid #2C3E50;
+  background-color: transparent;
+}
+
+/* Estilos para as tabelas */
+.table-responsive {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #2C3E50;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.table tbody td {
+  padding: 10px;
+  color: #2C3E50;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .indicator-card h2 {
+    font-size: 1.8rem;
+  }
+  
+  .dashboard-title {
+    font-size: 1.8rem;
+  }
+  
+  .filter-title {
+    font-size: 1.2rem;
+  }
+  
+  .indicators-section, .charts-section {
+    margin-bottom: 15px;
+  }
+}
